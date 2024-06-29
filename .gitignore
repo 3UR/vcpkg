@@ -300,6 +300,8 @@ __pycache__/
 !/triplets/x64-windows-static.cmake
 !/triplets/x64-windows.cmake
 !/triplets/x86-windows.cmake
+#specific customization
+!/triplets/x86-windows-gameengine.cmake
 
 !/triplets/community
 !/triplets/community/**

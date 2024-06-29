@@ -223,10 +223,10 @@
     <Warning Text="[vcpkg] Failed to gather app local DLL dependencies, program may not run. Set VcpkgApplocalDeps to false in your project file to suppress this warning. Builtin arguments: $(_ZVcpkgApplocalBuiltinArguments)"
       Condition="$(_ZVcpkgAppLocalExitCode) != 0 and '$(VcpkgXUseBuiltInApplocalDeps)' == 'true'"/>
 
-    <!-- Search %PATH% for pwsh.exe if it is available. -->
+    <!-- Search %PATH% for powershell.exe if it is available. -->
     <Exec
       Condition="'$(VcpkgXUseBuiltInApplocalDeps)' != 'true'"
-      Command="pwsh.exe $(_ZVcpkgAppLocalPowerShellCommonArguments)"
+      Command="powershell.exe $(_ZVcpkgAppLocalPowerShellCommonArguments)"
       IgnoreExitCode="true"
       UseCommandProcessor="false">
       <Output TaskParameter="ExitCode"
